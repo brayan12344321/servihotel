@@ -1,0 +1,40 @@
+.title h1 {
+  font-size: 25px;
+  text-align: center;
+}
+
+.Servicios a {
+  padding: 1px;
+  background-color: red;
+  width: 75%;
+  text-decoration: none;
+}
+.Servicios2 a {
+  padding: 1px;
+  background-color: red;
+  width:45%;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 94px;
+
+}
+
+.Servicios2{
+  margin-top: 40px;
+}
+
+.group2{
+  margin-top: 10px;
+}
+
+.input {
+  font-size: 20px;
+}
+.select{
+  font-size: 20px;
+}
+
+.submit{
+  width: 50%;
+  margin-top: 50px;
+}
