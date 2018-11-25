@@ -9,11 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <link rel="stylesheet" href="<?php echo base_url(); ?>jquery.mobile/jquery.mobile-1.4.5.min.css">
     <script src="<?php echo base_url(); ?>jquery.mobile/jquery.js"></script>
     <script src="<?php echo base_url(); ?>jquery.mobile/jquery.mobile-1.4.5.js"></script>
-    <!--themes-->
-     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
-    <link rel="stylesheet" href="<?php echo base_url(); ?>theme/themes/jquery.mobile.icons.min.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>theme/themes/themeRoller.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>theme/themes/themeRoller.min.css">
+  
   </head>
   <body>
 		<div data-role="page" data-theme="a">
@@ -24,11 +20,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div data-role="main"
       <!-- SERVICIOS-->
       <div class="Servicios2">
-        <center><a href="<?php echo base_url(); ?>FormularioAseo" data-role="button" data-transition="flip"><h2>Servicio de<br> aseo</h2></a>
-        <a href="<?php echo base_url(); ?>cocina" data-role="button" data-transition="flip"><h2>Servicios de <br>cocina</h2></a></center>
+        <center><a href="<?php echo base_url(); ?>FormularioAseo" data-role="button" ><h2>Servicio de<br> aseo</h2></a>
+        <a href="<?php echo base_url(); ?>cocina" data-role="button" ><h2>Servicios de <br>cocina</h2></a></center>
         <div class="group2">
-          <center><a href="#confirmar" data-role="button" data-transition="flip" data-rel="dialog"><h2>Soporte<br>tecnico</h2></a>
-          <a href="" data-role="button" data-transition="flip"><h2>Servicio de<br>Resepción </h2></a></center>
+          <center><a href="#confirmar" data-role="button"  data-rel="dialog"><h2>Soporte<br>tecnico</h2></a>
+          <a href="<?php echo base_url(); ?>recepcion" data-role="button" ><h2>Servicio de<br>Reservas</h2></a></center>
         </div>
 
       </div>
@@ -41,12 +37,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </div>
       <div data-role="main">
         <div class="input">
+          <input type="text" name="" value="" placeholder="Daño">
             <input type="text" name="" placeholder="Numero Habitacion" >
         </div>
       </div>
       <div data-role="footer">
         <a href="#" data-role="button">llamar</a>
-        <a href="<?php  echo base_url();?>Servivio" data-role="button">Cancelar</a>
+        <a href="<?php  echo base_url();?>soporte" data-role="button">Cancelar</a>
       </div>
 
     </div>

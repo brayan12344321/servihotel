@@ -18,9 +18,28 @@ class cocina extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+
+	 public function __construct()
+	{
+		parent::__construct();
+		$this->load->model('model_usuario');
+		$this->load->model('model_cocina');
+
+	}
+
 	public function index()
 	{
-		$this->load->view('view_cocina');
+		$this->load->view('view_Cocina');
+	}
+
+	public function insertarCocina($id){
+		$recibir_datos = array(
+			'usuario' => $id,
+			'pedir' => $this->input->post('producto'),
+			'num_habitacion' => $this->input->post('numero_habitacion'),
+		);
+		$this->model_cocina->insertarCocina($recibir_datos);
+		redirect('cocina/',refresh);
 	}
 
 }

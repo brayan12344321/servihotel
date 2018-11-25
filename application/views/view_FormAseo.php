@@ -9,11 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <link rel="stylesheet" href="<?php echo base_url(); ?>jquery.mobile/jquery.mobile-1.4.5.min.css">
     <script src="<?php echo base_url(); ?>jquery.mobile/jquery.js"></script>
     <script src="<?php echo base_url(); ?>jquery.mobile/jquery.mobile-1.4.5.js"></script>
-    <!--themes-->
-     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
-    <link rel="stylesheet" href="<?php echo base_url(); ?>theme/themes/jquery.mobile.icons.min.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>theme/themes/themeRoller.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>theme/themes/themeRoller.min.css">
+   
   </head>
   <body>
 		<div data-role="page" data-theme="a">
